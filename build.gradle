@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript { // Details build configuration, tasks, and plugins
+    ext.kotlin_version = '2.0.20-Beta1' // Kotlin extension version
+    repositories {
+        google() // needed for location
+        mavenCentral() // previously jcenter(), hosts open source libs
+
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:8.4.2' // declaring version of gradle build
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // declaring version of jetbrains
+
+        def nav_version = '2.5.0' // declaring navigation version
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral() // previously jcenter()
+
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete('build') // Delete the 'build' directory directly
+}

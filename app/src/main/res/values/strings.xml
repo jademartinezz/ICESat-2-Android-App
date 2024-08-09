@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">ICESat-2</string>
+
+    <!--    nav bar-->
+    <string name="title_home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="info">Info</string>
+    <string name="chooseLocation">Select Location</string>
+    <string name="gallery">Gallery</string>
+    <string name="search_location">search location</string>
+
+    <!--fragment_search-->
+    <string name="enterLatLong">Enter Latitude/Longitude</string>
+    <string name="latHint">Latitude &#xb0;N</string>
+    <string name="longHint">Longitude &#xb0;E</string>
+    <string name="enterSearchRadius">Enter Search Radius</string>
+    <string name="useCurrentLocation">Use Current Location</string>
+    <string name="selectLocationOnMap">Select Location On Map</string>
+    <string name="enterLocation"><b>Find ICESat-2 tracks!</b></string>
+    <string name="or">OR</string>
+    <string name="radius_mi">Radius (1.1–25)"</string>
+    <string name="radius_km">Radius (1.8–40.2)"</string>
+    <string name="miles">Miles</string>
+    <string-array name="unitSelector">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string name="title_activity_delete_me">Map</string>
+    <string name="searchForLocation">Search for a Location</string>
+    <string name="advancedSearch"><b>Advanced Search</b></string>
+    <string name="simpleSearch"><u><b>Simple Search</b></u></string>
+
+    <string name="useMap">Find with\nMap</string>
+    <string name="useLocation">Current\nLocation</string>
+    <string name="track">"Track ICESat-2"</string>
+    <string name="icesatBanner"><b>ICESat-2</b>: ICE, CLOUD, AND\nLAND ELEVATION SATELLITE 2</string>
+
+    <string name="yourLocation">Your Location</string>
+    <string name="clearSearch">Clear Search</string>
+    <string name="searchingFor">Searching for %1$s</string>
+
+    <string name="past">Past</string>
+    <string name="future">Future</string>
+    <string name="searchCheckBoxes">At least one of the past/future checkboxes must be selected.</string>
+
+    <string name="latInputError">Please enter Latitude value between -86.0 and 86.0 %1$cN</string>
+    <string name="longInputError">Please enter Longitude value between -180.0 and 180.0 %1$cE</string>
+    <string name="radiusInputErrorMiles">Please enter Radius value between 1.1 and 25.0 Miles</string>
+    <string name="radiusInputErrorKilometers">Please enter Radius value between 1.1 and 40.2 Kilometers</string>
+
+
+    <!--    Fragment Info Dialog-->
+    <string name="image_description_results_screenshot">Map results example.</string>
+
+
+    <!--    Map Fragment Dialog-->
+    <string name="noResults">No Results.</string>
+    <string name="noResultsDetails">There are currently no results for your search criteria.
+    New cycle data will be available soon. Try searching in another location.</string>
+    <string name="backToSearch">Back to Search</string>
+    <string name="future_marker_description">Marker for future results.</string>
+    <string name="past_marker_description">Marker for past results.</string>
+    <string name="star_content_description">Star</string>
+    <string name="constraint">Constraint</string>
+    <string name="textViewDate">Text view date</string>
+    <string name="textViewTime">Text view time</string>
+    <string name="textViewDisplayCoords">Text view</string>
+    <string name="textView_v21">Display exclusively for version 21.</string>
+    <string name="imageView">ICESat-2 penguin icon.</string>
+    <!--    No Network Connection Dialog-->
+    <string name="noNetworkTitle">No Network Connection</string>
+    <string name="noNetworkDescription">Please connect to a network and try again</string>
+    <string name="ok">OK</string>
+
+<!--    Search Error Dialog-->
+    <string name="searchError">Search Timed Out.</string>
+    <string name="searchErrorDescription">We are having trouble connecting to our servers right now.
+        Please check your network connection and try again.</string>
+
+    <!--    Location turned off dialog-->
+    <string name="locationOffTitle">Location is Turned Off</string>
+    <string name="locationOffDescription">Please turn on your location</string>
+    <string name="textViewDateTime">Date and time.</string>
+    <string name="latLong">Latitude and longitude text.</string>
+
+    <!--    ResultsHolderFragment-->
+    <string name="map">Map</string>
+    <string name="list">List</string>
+    <string name="searchResults">Search Results</string>
+    <string name="star">Star</string>
+    <string name="close">Close</string>
+    <string name="markers">Markers</string>
+    <string name="tracks">Tracks</string>
+    <string name="laserBeams">Laser Beams</string>
+    <string name="seeAll"><u>See All</u></string>
+
+    <string name="pastFutureLegend"><font fgcolor='#FF0000b3'><b>Past</b></font> <b>:</b> <font fgcolor='#FFFF3B30'><b>Future</b></font></string>
+
+    <string name="selectALocation">Please choose a marker to add to your calendar.</string>
+
+
+    <string name="icesatFlyover">ICESat-2 Flyover</string>
+
+<!--    Tracking Fragment-->
+    <string name="icesat2">ICESat-2</string>
+    <string name="icesat2Location">ICESat-2 Current Location</string>
+    <string name="trackingLatLong">Lat: %1$d\nLon: %2$d</string>
+    <string name="moreData"><u>More Data</u></string>
+    <string name="nearNorthPole">Near North Pole</string>
+    <string name="nearSouthPole">Near South Pole</string>
+    <string name="serverError">Servers Not Updated</string>
+    <string name="serverErrorDescription">Please try again later. We are working hard to update our servers.</string>
+
+    <!--    MarkerSelectedFragment-->
+    <string name="dateDisplay">%1$s, %2$s, %3$s</string>
+    <string name="timeDisplay">%1$s %2$s %3$s</string>
+    <string name="trackBeginsAt">Track Begins on:\n%1$s, %2$s</string>
+    <string name="notificationSet">Notification Set</string>
+    <string name="notificationSetMultiple">Notifications Set</string>
+    <string-array name="hoursDaysSelector">
+        <item>Hours</item>
+        <item>Days</item>
+    </string-array>
+
+    <!--    ListFrag RecyclerView-->
+    <string name="dateYearString">%1$s, %2$s</string>
+    <string name="latLngDisplayString">%1$s%2$cN, %3$s%4$cE</string>
+
+
+    <!--    Info Fragment-->
+
+    <string name="watchVideo">Watch Video about ICESat-2</string>
+
+
+    <string name="currentData"><b>Current Cycle Data:</b> \n%1$s</string>
+    <string name="appInfo1">
+        When will ICESat-2 measure a particular area? With this app you can find out by using your location, choosing a location on a map, searching for a specific site, or entering coordinates. You can view future results, past results or both for all data available in the app.
+        After searching, you will see the Reference Ground Track (RGT). By selecting the laser beam checkbox, you can add the tracks of the laser beams. Here is an example of what that would look like. \n
+    </string>
+
+    <string name="appInfo2">
+        \nSome of the laser beams appear as different colors to differentiate the beams for each set of tracks. Your point of interest can be saved as a
+        favorite by clicking the star, add to your calendar from the three dots menu, or set notification reminders for that point using the bell icon. You can also share
+        the results by using the share button from the search results screen. From the home screen, you can use the \'Where\'s ICESat-2\' button to determine the current position of ICESat-2.
+        \n
+    </string>
+
+
+    <string name="aboutICESat">NASA’s groundbreaking <a href="https://icesat-2.gsfc.nasa.gov/">Ice Cloud and land Elevation Satellite 2 (ICESat-2)</a> measures the Earth’s surface using lasers with amazing
+        precision and accuracy. The <a href="https://icesat-2.gsfc.nasa.gov/space-lasers">Advanced Topographic Laser Altimeter System (ATLAS)</a> instrument pulses a green laser 10,000 times per second. With its telescope and array of
+        single-photon counting detectors, ATLAS measures the precise travel time of photons from their release from the satellite until they return, only
+        about 3.3 milliseconds later.\n</string>
+
+    <string name="infoUnderstandingMap">We hope you enjoy using this app and that
+        you stay involved with the ICESat-2 mission! Please leave us feedback on the app store. We are excited about the ICESat-2 mission and want to share its results with the community.
+        <a href="https://icesat-2.gsfc.nasa.gov/science/data-products">ICESat-2 Data Products</a>
+        are available to the public from the <a href="https://nsidc.org/data/icesat-2">National Snow and Ice Data Center (NSIDC)</a>.</string>
+    <!--    Main Menu-->
+    <string name="addToCalendar">Add to Calendar</string>
+    <string name="share">Share</string>
+    <string name="icesatShare">Check this out! NASA\'s ICESat-2 satellite will be flying over %1$s on: %2$s.</string>
+    <string name="icesatShareLastDate">\u0020and %1$s</string>
+
+
+    <!--    Select on Map-->
+    <string name="touchAndHold">Touch and hold to \nadd a location</string>
+    <string name="locationSnackbar">Location permissions need to be enabled to use this feature</string>
+    <string name="grantAccess">Grant Access</string>
+    <string name="unknownLocation">Unknown Location</string>
+
+
+    <!--    Favorites Fragment-->
+    <string name="delete">Delete</string>
+    <string name="deleteAllTitle">Delete All Favorites?</string>
+    <string name="deleteAllDescription">Are you sure you want to delete all of your favorites? This action cannot be undone.</string>
+    <string name="yes">Yes, Delete.</string>
+    <string name="cancel">Cancel</string>
+    <string name="itemDeleted">Item Deleted.</string>
+    <string name="undo">Undo</string>
+    <string name="noFavoritesYet">No Favorites Yet.</string>
+    <string name="geoLatLng"><i>%1$s</i>\n%2$s%3$cN %4$s%5$cE</string>
+
+<!--    notifications-->
+    <string name="channel_name">ICESat-2 Notifications</string>
+    <string name="channel_description">Reminders about when the satellite will be passing over</string>
+    <string name="flyoverNotification">ICESat-2 will be near %1$s at %2$s on %3$s</string>
+    <string name="notificationReminderSingle">Reminder: ICESat-2 will be near %1$s in %2$s hour</string>
+    <string name="notificationReminderMulti">Reminder: ICESat-2 will be near %1$s in %2$s hours</string>
+    <string name="customReminder">This is your custom reminder for the ICESat-2 flyover on %1$s at %2$s</string>
+    <string name="one">one</string>
+
+    <string name="remindMe">Remind Me</string>
+    <string name="before">Before</string>
+    <string-array name="notificationOptions">
+        <item>One hour before</item>
+        <item>24 hours before</item>
+        <item>Set custom reminder</item>
+    </string-array>
+
+</resources>

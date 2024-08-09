@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background fill color -->
+    <!--solid android:color="#61B4DE" /-->
+    <solid android:color="#81BFDE" /> <!-- Red fill color; change as needed -->
+
+    <!-- Corner radius for rounded corners (optional) -->
+    <!-- Specify size (optional) -->
+    <!-- You can specify fixed dimensions if needed -->
+    <!--
+        -->
+    <size
+        android:width="2dp"
+        android:height="2dp" />
+
+</shape>

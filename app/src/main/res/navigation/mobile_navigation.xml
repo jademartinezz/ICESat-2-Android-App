@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.search.SearchFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_home_to_mapFragment2"
+            app:destination="@id/mapFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_navigation_search_to_resultsHolderFragment"
+            app:destination="@id/resultsHolderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+            <argument android:name="lat"
+                android:defaultValue="0.0" />
+            <argument android:name="long"
+                android:defaultValue="0.0" />
+            <argument
+                android:name="title"
+                app:argType="string"
+                android:defaultValue='""' />
+            <argument android:name="dateObjectTime"
+                app:argType="long" />
+
+        <action
+            android:id="@+id/action_navigation_search_to_selectOnMapFragment"
+            app:destination="@id/selectOnMapFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_satelliteTrackingFragment"
+            app:destination="@id/satelliteTrackingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.favorites.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_favorites_to_singleMarkerMap"
+            app:destination="@id/singleMarkerMap"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+            <argument android:name="lat"
+                android:defaultValue="0.0" />
+            <argument android:name="long"
+                android:defaultValue="0.0" />
+            <argument
+                android:name="title"
+                app:argType="string"
+                android:defaultValue='""' />
+            <argument android:name="dateObjectTime"
+                app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.info.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/mapFragment2"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.MapFragment"
+        android:label="MapFragment" />
+    <fragment
+        android:id="@+id/resultsHolderFragment"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ResultsHolderFragment"
+        android:label="@string/searchResults"
+        tools:layout="@layout/fragment_results_holder" >
+        <action
+            android:id="@+id/action_resultsHolderFragment_to_singleMarkerMap"
+            app:destination="@id/singleMarkerMap"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+            <argument android:name="lat"
+                android:defaultValue="0.0" />
+            <argument android:name="long"
+                android:defaultValue="0.0" />
+            <argument
+                android:name="title"
+                app:argType="string"
+                android:defaultValue='""' />
+            <argument android:name="dateObjectTime"
+                app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectOnMapFragment"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.SelectOnMapFragment"
+        android:label="@string/selectLocationOnMap"
+        tools:layout="@layout/fragment_select_on_map" >
+        <action
+            android:id="@+id/action_selectOnMapFragment_to_resultsHolderFragment"
+            app:destination="@id/resultsHolderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+            <argument android:name="lat"
+                android:defaultValue="0.0" />
+            <argument android:name="long"
+                android:defaultValue="0.0" />
+            <argument
+                android:name="title"
+                app:argType="string"
+                android:defaultValue='""' />
+            <argument android:name="dateObjectTime"
+                app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.gallery.GalleryFragment"
+        android:label="@string/gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_navigation_gallery_to_galleryDisplay"
+            app:destination="@id/galleryDisplay" />
+        <action
+            android:id="@+id/action_navigation_gallery_to_galleryContainerFragment2"
+            app:destination="@id/galleryContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryDisplay"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.gallery.GalleryDisplay"
+        android:label="@string/gallery"
+        tools:layout="@layout/fragment_gallery_display">
+        <argument
+            android:name="index"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryContainerFragment"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.ui.gallery.GalleryContainerFragment"
+        android:label="@string/gallery"
+        tools:layout="@layout/fragment_gallery_container" >
+        <argument
+            android:name="index"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleMarkerMap"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.SingleMarkerMap"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_single_marker_map" >
+        <argument android:name="lat"
+            android:defaultValue="0.0" />
+        <argument android:name="long"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument android:name="dateObjectTime"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/satelliteTrackingFragment"
+        android:name="gov.nasa.gsfc.icesat2.icesat_2.SatelliteTrackingFragment"
+        android:label="@string/icesat2Location" />
+</navigation>
